@@ -1,8 +1,8 @@
 import { getContext, onMount } from 'svelte';
 import { writable, derived } from 'svelte/store';
 
-export const width = writable(800);
-export const height = writable(600);
+export const width = writable(1000);
+export const height = writable(800);
 export const pixelRatio = writable(window.devicePixelRatio);
 export const context = writable();
 export const canvas = writable();

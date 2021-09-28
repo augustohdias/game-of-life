@@ -12,6 +12,7 @@
 		color: black;
 		font-size: 2em;
 		text-align: center;
+		margin: 0px;
 	}
 	
 	:global(body) {
@@ -20,19 +21,22 @@
 	}
 </style>
 
-<h1>Game Of Life</h1>
+<body>
+	<h1>Game Of Life</h1>
 
-<Canvas>
-	<Background color='black'>
-		<Cell/>
-	</Background>
-	<FPS/>
-	<Text 
-		text='Game of Life, in memorian of John Conway'
-		fontSize={15}
-		color='white'
-		align='right'
-		baseline='bottom' 
-		x={$width - 20}
-		y={$height - 20} />
-</Canvas>
+	<Canvas>
+		<Background color='black'>
+			<Cell/>
+		</Background>
+		<FPS/>
+		<Text 
+			text='Game of Life, in memorian of John Conway'
+			fontSize={15}
+			color='white'
+			align='right'
+			baseline='bottom' 
+			x={$width - 20}
+			y={$height - 20} />
+	</Canvas>
+	
+</body>
